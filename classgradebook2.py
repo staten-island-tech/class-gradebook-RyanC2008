@@ -6,10 +6,11 @@ def find_average(grade_list):
 
 while True:
     student_name = input('Please input student name here: ')
-    print('Thank you!')
-    print(f'Please enter grades for {student_name} here: ')
-    break
-
+    grade = input(f'Please input grades for {student_name} or enter Q to stop: ')
+    if grade == 'Q':
+        break
+    else: 
+        grade_list.append(int(grade))
 
 
     
